@@ -1,0 +1,180 @@
+/* Genel Stil Ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+/* Genel Stil Ayarları Son*/
+
+/* Navigasyon Menüsü */
+header {
+  background-color: #2c3e50;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.logo {
+  color: #ecf0f1;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e74c3c;
+}
+/* Navigasyon Menüsü Son*/
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 100px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+/* Hero Section Son */
+
+/* Hero Section */
+.info-section {
+  padding: 60px 20px;
+  background-color: #ecf0f1;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.info-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.info-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/* Info Section Son */
+
+/* Books Section */
+.books-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.books-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.book-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.book-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ecf0f1;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.book-list li:hover {
+  background-color: #dcdde1;
+}
+
+.book-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.book-year {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+/* Books Section Son*/
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+footer p {
+  font-size: 14px;
+}
+/* Footer Son */
