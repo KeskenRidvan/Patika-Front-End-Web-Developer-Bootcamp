@@ -1,0 +1,100 @@
+:root {
+  --body-color: #000000;
+  --bg-white: #e9e9e9;
+  --bg-grey: #38434f;
+  --bg-main-color: #38434f;
+  --text-color: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-color);
+  color: var(--bg-white);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+/* Navbar */
+
+.bi-linkedin {
+  font-size: 2.25rem;
+  margin-right: 0.5rem;
+  color: var(--bg-white);
+}
+
+/* Search */
+.input-group span,
+.input-group input {
+  background-color: var(--bg-grey);
+}
+/* Search end */
+
+.nav-item i {
+  font-size: 1.5rem;
+  color: var(--bg-white);
+}
+
+/* Navbar end */
+
+main .left-section,
+main .middle-section,
+main .right-section {
+  background-color: var(--bg-main-color);
+}
+
+.left-section p {
+  font-size: 0.8rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-grey);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Left Sidebar */
+.card img {
+  object-fit: cover;
+}
+
+.card-body h5 {
+  font-size: 18px;
+}
+
+.card-body p {
+  color: var(--text-color);
+}
+
+.my-list {
+  background-color: var(--bg-grey);
+  color: var(--text-color);
+}
+
+/* Main Feed */
+textarea {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Right Sidebar */
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list-group-item {
+  padding: 10px;
+}
