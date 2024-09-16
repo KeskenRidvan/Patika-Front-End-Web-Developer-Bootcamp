@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../src/css/style.css" rel="stylesheet">
+  <link href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</head>
+
+<body class="font-sans bg-slate-50">
+
+  <!-- Header -->
+  <header class="container mx-auto px-5 ">
+    <!-- Nav -->
+    <nav class="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+      <!-- Navlink -->
+      <div class="flex flex-row gap-5 basis-1/3">
+        <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+          href="#">Link</a>
+        <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+          href="#">Link</a>
+        <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+          href="#">Link</a>
+      </div>
+      <!-- Logo -->
+      <div class="my-5 text-2xl basis-1/3 text-center">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <!-- Search -->
+      <div class="flex flex-col lg:flex-row items-center justify-end basis-1/3 gap-3 w-full lg:max-w-lg">
+        <!-- Search input -->
+        <form class="relative flex justify-center items-center w-full basis-1/2">
+          <input class="w-full  p-2 border lg:border-none border-violet-800 rounded block placeholder:px-6" type="text"
+            placeholder="Search...">
+          <!-- Search logo -->
+          <i class="fa-solid fa-magnifying-glass absolute left-0 ml-4 text-1xl text-slate-400"></i>
+        </form>
+        <!-- Login button -->
+        <a
+          class="px-5 py-2 bg-violet-800 rounded text-center font-semibold text-white w-full lg:inline-block lg:w-auto hover:bg-violet-700 transition-all duration-150">Log
+          in</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-5 lg:mt-0">
+    <!-- Hero -->
+    <section class="bg-gray-200 py-16 flex flex-col gap-5">
+      <!-- Top text -->
+      <p class="text-3xl px-24 font-bold text-center">Quisquam necessita <br>vel <span class="text-violet-800">laborum
+          <br>doloribus</span>delectus
+      </p>
+      <!-- Middle text -->
+      <p class="text-center px-24 font-semibold">
+        Lorem ipsum dolor sit amet <br>adipisicing elit. Aperiam
+        aut dignissimos!
+      </p>
+      <!-- Bottom buttons -->
+      <div class="flex items-center justify-center gap-5 mt-8 mb-10">
+        <a class="bg-violet-800 px-5 py-2 rounded text-white font-semibold  hover:bg-violet-700 transition-all duration-150"
+          href="#">Get started</a>
+        <a class="px-5 py-2 rounded font-semibold hover:border hover:border-black duration-150 transition-all"
+          href="#">Learn
+          more</a>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section class="mt-5 flex flex-col items-center justify-center container mx-auto p-5">
+      <p class="text-2xl font-bold mb-20">What our customers are saying about us</p>
+      <!-- About us cards -->
+      <div class="flex flex-col lg:flex-row flex-wrap items-center justify-between gap-5 lg:gap-y-12 lg:w-[70%]">
+        <!-- card-1 -->
+        <div class="bg-white shadow-2xl rounded-lg w-full lg:w-[45%]">
+          <div class="px-16 py-8 text-center">
+            <div class="text-left">
+              <i class="fa-solid fa-quote-left text-xl mb-2"></i>
+            </div>
+            <p class="font-semibold"><em>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vitae harum alias
+                recusandae laboriosam dolores ea animi voluptatibus!
+              </em></p>
+            <div class="text-right">
+              <i class="fa-solid fa-quote-right mt-2 items-end text-right text-xl"></i>
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center justify-center bg-violet-700 w-full p-0 rounded-b-lg">
+            <span
+              class="w-16 h-16 rounded-full bg-gray-600 text-white absolute top-[-32px] flex justify-center items-center font-bold text-xl">
+              ?
+            </span>
+            <div class="py-6 text-center mt-4">
+              <p class="text-white font-bold">Distinctio Animi</p>
+              <p class="text-white ">Lorem, ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-2 -->
+        <div class="bg-white shadow-2xl rounded-lg w-full lg:w-[45%]">
+          <div class="px-16 py-8 text-center">
+            <div class="text-left">
+              <i class="fa-solid fa-quote-left text-xl mb-2"></i>
+            </div>
+            <p class="font-semibold"><em>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vitae harum alias
+                recusandae laboriosam dolores ea animi voluptatibus!
+              </em></p>
+            <div class="text-right">
+              <i class="fa-solid fa-quote-right mt-2 items-end text-right text-xl"></i>
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center justify-center bg-violet-700 w-full p-0 rounded-b-lg">
+            <span
+              class="w-16 h-16 rounded-full bg-gray-600 text-white absolute top-[-32px] flex justify-center items-center font-bold text-xl">
+              ?
+            </span>
+            <div class="py-6 text-center mt-4">
+              <p class="text-white font-bold">Distinctio Animi</p>
+              <p class="text-white ">Lorem, ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="bg-white shadow-2xl rounded-lg w-full lg:w-[45%]">
+          <div class="px-16 py-8 text-center">
+            <div class="text-left">
+              <i class="fa-solid fa-quote-left text-xl mb-2"></i>
+            </div>
+            <p class="font-semibold"><em>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vitae harum alias
+                recusandae laboriosam dolores ea animi voluptatibus!
+              </em></p>
+            <div class="text-right">
+              <i class="fa-solid fa-quote-right mt-2 items-end text-right text-xl"></i>
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center justify-center bg-violet-700 w-full p-0 rounded-b-lg">
+            <span
+              class="w-16 h-16 rounded-full bg-gray-600 text-white absolute top-[-32px] flex justify-center items-center font-bold text-xl">
+              ?
+            </span>
+            <div class="py-6 text-center mt-4">
+              <p class="text-white font-bold">Distinctio Animi</p>
+              <p class="text-white ">Lorem, ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-4 -->
+        <div class="bg-white shadow-2xl rounded-lg w-full lg:w-[45%]">
+          <div class="px-16 py-8 text-center">
+            <div class="text-left">
+              <i class="fa-solid fa-quote-left text-xl mb-2"></i>
+            </div>
+            <p class="font-semibold"><em>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vitae harum alias
+                recusandae laboriosam dolores ea animi voluptatibus!
+              </em></p>
+            <div class="text-right">
+              <i class="fa-solid fa-quote-right mt-2 items-end text-right text-xl"></i>
+            </div>
+          </div>
+          <div class="relative flex flex-col items-center justify-center bg-violet-700 w-full p-0 rounded-b-lg">
+            <span
+              class="w-16 h-16 rounded-full bg-gray-600 text-white absolute top-[-32px] flex justify-center items-center font-bold text-xl">
+              ?
+            </span>
+            <div class="py-6 text-center mt-4">
+              <p class="text-white font-bold">Distinctio Animi</p>
+              <p class="text-white ">Lorem, ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section class="flex flex-col container mx-auto w-[96%] bg-white rounded px-6 py-7 mt-5 lg:w-[50%] shadow-2xl">
+      <p class="text-2xl font-bold mb-4">Contact us</p>
+      <form>
+        <div class="flex flex-col items-start justify-start mb-3">
+          <label class="font-semibold mb-1" for="Name">Name</label>
+          <input class="p-2 bg-slate-100 w-full rounded" type="text" placeholder="Your name">
+        </div>
+        <div class="flex flex-col items-start justify-start mb-3">
+          <label class="font-semibold mb-1" for="Email">Email</label>
+          <input class="p-2 bg-slate-100 w-full rounded" type="email" placeholder="Your email">
+        </div>
+        <div class="flex flex-col items-start justify-start mb-3">
+          <label class="font-semibold mb-1" for="Message">Message</label>
+          <textarea class=" p-2 bg-slate-100 w-full" name="Message" rows="3" placeholder="Message..."></textarea>
+        </div>
+      </form>
+      <a
+        class="px-5 py-2 mt-5 bg-violet-800 rounded text-center font-semibold text-white w-full lg:inline-block lg:w-auto hover:bg-violet-700 transition-all duration-150">Send</a>
+    </section>
+
+  </main>
+
+  <footer class="flex flex-col gap-5 md:flex-row md:justify-between items-center px-32 mx-auto py-16">
+    <div class="flex gap-5">
+      <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+        href="#">Shop</a>
+      <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+        href="#">About</a>
+      <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+        href="#">Blog</a>
+      <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+        href="#">Pricing</a>
+      <a class="hover:border-b duration-200 transition-all border-b-violet-800 hover:text-violet-800 font-semibold"
+        href="#">Contact</a>
+    </div>
+    <div class="flex gap-5">
+      <a href="#">
+        <i
+          class="fa-brands fa-instagram bg-violet-800 text-white rounded-full h-4 w-4 p-3 hover:bg-violet-700 transition-all duration-150">
+        </i>
+      </a>
+
+      <a href="#">
+        <i
+          class="fa-brands fa-pinterest bg-violet-800 text-white rounded-full h-4 w-4 p-3 hover:bg-violet-700 transition-all duration-150">
+
+        </i>
+      </a>
+
+      <a href="#">
+        <i
+          class="fa-brands fa-twitter bg-violet-800 text-white rounded-full h-4 w-4 p-3 hover:bg-violet-700 transition-all duration-150">
+        </i>
+      </a>
+
+      <a href="#">
+        <i
+          class="fa-brands fa-facebook bg-violet-800 text-white rounded-full h-4 w-4 p-3 hover:bg-violet-700 transition-all duration-150">
+        </i>
+      </a>
+
+      <a href="#">
+        <i
+          class="fa-brands fa-google bg-violet-800 text-white rounded-full h-4 w-4 p-3 hover:bg-violet-700 transition-all duration-150">
+        </i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
