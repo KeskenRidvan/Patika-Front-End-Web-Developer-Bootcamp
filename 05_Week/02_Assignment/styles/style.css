@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #f4f4f4;
+  --primary-color: #333;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.container img {
+  width: 30vw;
+  max-width: 80%;
+}
+
+.drum-buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.key {
+  padding: 0.5rem 0.7rem;
+  border-radius: 100%;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.sound-button {
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sound-button:hover {
+  background-color: black;
+}
+
+/* active */
+.sound-button:active {
+  transform: scale(0.9);
+}
+
+/* press buttons */
+.sound-button.pressed {
+  transform: scale(0.9);
+}
