@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Kit</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+  <main>
+    <!-- drum kit container -->
+    <div class="container">
+      <!-- page title -->
+      <h1>Let's Play Drum Kit!</h1>
+      <!-- drum image -->
+      <img src="images/drum.png" alt="Drum Kit" class="drum-img" />
+
+      <!-- drum buttons -->
+      <div class="drum-buttons">
+        <!-- clap button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="A">Clap</button>
+          <span class="key">A</span>
+        </div>
+
+        <!-- boom button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="S">Boom</button>
+          <span class="key">S</span>
+        </div>
+
+        <!-- hihat button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="D">Hihat</button>
+          <span class="key">D</span>
+        </div>
+
+        <!-- kick button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="F">Kick</button>
+          <span class="key">F</span>
+        </div>
+
+        <!-- openhat button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="G">Openhat</button>
+          <span class="key">G</span>
+        </div>
+
+        <!-- ride button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="H">Ride</button>
+          <span class="key">H</span>
+        </div>
+
+        <!-- snare button  -->
+        <div class="button-container">
+          <button class="sound-button" data-key="J">Snare</button>
+          <span class="key">J</span>
+        </div>
+
+        <!-- tink button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="K">Tink</button>
+          <span class="key">K</span>
+        </div>
+
+        <!-- tom button -->
+        <div class="button-container">
+          <button class="sound-button" data-key="L">Tom</button>
+          <span class="key">L</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Audio files for each button -->
+  <audio data-key="A" src="sounds/clap.wav"></audio>
+  <audio data-key="S" src="sounds/boom.wav"></audio>
+  <audio data-key="D" src="sounds/hihat.wav"></audio>
+  <audio data-key="F" src="sounds/kick.wav"></audio>
+  <audio data-key="G" src="sounds/openhat.wav"></audio>
+  <audio data-key="H" src="sounds/ride.wav"></audio>
+  <audio data-key="J" src="sounds/snare.wav"></audio>
+  <audio data-key="K" src="sounds/tink.wav"></audio>
+  <audio data-key="L" src="sounds/tom.wav"></audio>
+  <!-- JS script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
