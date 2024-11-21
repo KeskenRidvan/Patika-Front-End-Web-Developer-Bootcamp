@@ -1,0 +1,102 @@
+:root {
+  --cube-size: 15vw;
+  --cube-translate: calc((var(--cube-size) / 2) - 4px);
+  --perspective: calc(var(--cube-size) * 2);
+  --transition: ease-in-out 0.5s;
+
+  /* Background Images */
+  --front-face: url("/src/assets/dice1.png");
+  --back-face: url("/src/assets/dice6.png");
+  --right-face: url("/src/assets/dice3.png");
+  --left-face: url("/src/assets/dice4.png");
+  --top-face: url("/src/assets/dice5.png");
+  --bottom-face: url("/src/assets/dice2.png");
+}
+
+.dice p {
+  margin-bottom: 10px;
+  color: var(--dice-color);
+}
+
+.scene {
+  width: var(--cube-size);
+  height: var(--cube-size);
+  perspective: var(--perspective);
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(calc(-1 * var(--cube-translate)));
+  transition: transform var(--transition);
+}
+
+.cubeFace {
+  position: absolute;
+  width: var(--cube-size);
+  height: var(--cube-size);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Position each face of the cube */
+.cubeFace-front {
+  transform: rotateY(0deg) translateZ(var(--cube-translate));
+}
+.cubeFace-back {
+  transform: rotateY(180deg) translateZ(var(--cube-translate));
+}
+.cubeFace-right {
+  transform: rotateY(90deg) translateZ(var(--cube-translate));
+}
+.cubeFace-left {
+  transform: rotateY(-90deg) translateZ(var(--cube-translate));
+}
+.cubeFace-top {
+  transform: rotateX(90deg) translateZ(var(--cube-translate));
+}
+.cubeFace-bottom {
+  transform: rotateX(-90deg) translateZ(var(--cube-translate));
+}
+
+/* Assign background images to each face */
+.cubeFace-front {
+  background-image: var(--front-face);
+}
+.cubeFace-back {
+  background-image: var(--back-face);
+}
+.cubeFace-right {
+  background-image: var(--right-face);
+}
+.cubeFace-left {
+  background-image: var(--left-face);
+}
+.cubeFace-top {
+  background-image: var(--top-face);
+}
+.cubeFace-bottom {
+  background-image: var(--bottom-face);
+}
+
+/* Define the rotations for each face */
+.cube.show-front {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateY(0deg);
+}
+.cube.show-back {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateY(-180deg);
+}
+.cube.show-right {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateY(-90deg);
+}
+.cube.show-left {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateY(90deg);
+}
+.cube.show-top {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateX(-90deg);
+}
+.cube.show-bottom {
+  transform: translateZ(calc(-1 * var(--cube-translate))) rotateX(90deg);
+}
