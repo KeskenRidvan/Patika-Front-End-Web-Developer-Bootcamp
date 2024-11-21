@@ -1,6 +1,6 @@
 # Projenin görüntüsü:
 
-![Proje Gifi](public/images/shoppingList.gif)
+![Proje Gifi](dice-game/public/images/shoppingList.gif)
 
 ## Zar atma oyunu!
 
